@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Website</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="overlay" id="overlay">
+      <h3>Searching Now...</h3>
+    </div>
+
+    <div class="hero-bg">
+      <section class="top">
+        <header>
+          <a href="#">yummy.eats</a>
+        </header>
+
+        <h1><span>The Healthy </span> Eating Experience</h1>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          eveniet labore ipsum maxime alias, consequatur quam iusto excepturi
+          veniam officiis totam aperiam eos aut minus a ratione voluptatibus
+          odit deleniti.
+        </p>
+
+        <div class="form-container">
+          <form action="">
+            <div class="form-left">
+              <label for="city">Enter your city</label>
+              <input type="text" name="city" id="city" />
+              <p>Example: "San Diego"</p>
+            </div>
+
+            <input type="button" value="Find Food Now" id="cta-btn" />
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <section class="authentic">
+      <div class="right-col">
+        <h2>Authentic.Awesome</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          maxime architecto sapiente beatae minus dolorem. Amet, omnis earum
+          consequatur facere iure voluptatum, fuga veniam corporis, totam illo
+          ullam voluptates reprehenderit!
+        </p>
+      </div>
+      <img src="Images/dimsum.avif" alt="dimsum" />
+    </section>
+
+    <section class="footer">
+      <div class="social">
+        <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+        <a href="#"> <i class="fa-brands fa-snapchat"></i></a>
+        <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+        <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+
+      <ul class="list">
+        <li><a href="#"> Home </a></li>
+        <li><a href="#"> Services </a></li>
+        <li><a href="#"> About </a></li>
+        <li><a href="#"> Terms </a></li>
+        <li><a href="#"> Privacy </a></li>
+      </ul>
+
+      <p class="copyright">yummy.eats @ 2022</p>
+    </section>
+
+    <script>
+      let btn = document.getElementById("cta-btn");
+      let overlay = document.getElementById("overlay");
+      btn.addEventListener("click", () => {
+        overlay.style.display = "grid";
+        overlay.classList.add("animate-overlay");
+      });
+    </script>
+  </body>
+</html>
